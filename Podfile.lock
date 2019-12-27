@@ -1,0 +1,137 @@
+PODS:
+  - Carte (2.2.1)
+  - Firebase/Analytics (6.14.0):
+    - Firebase/Core
+  - Firebase/Core (6.14.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.1.7)
+  - Firebase/CoreOnly (6.14.0):
+    - FirebaseCore (= 6.5.0)
+  - FirebaseAnalytics (6.1.7):
+    - FirebaseCore (~> 6.5)
+    - FirebaseInstanceID (~> 4.2)
+    - GoogleAppMeasurement (= 6.1.7)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - FirebaseCore (6.5.0):
+    - FirebaseCoreDiagnostics (~> 1.0)
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.4)
+    - GoogleUtilities/Logger (~> 6.4)
+  - FirebaseCoreDiagnostics (1.1.2):
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleDataTransportCCTSupport (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/Logger (~> 6.2)
+    - nanopb (~> 0.3.901)
+  - FirebaseCoreDiagnosticsInterop (1.1.0)
+  - FirebaseInstanceID (4.2.5):
+    - FirebaseCore (~> 6.0)
+    - GoogleUtilities/Environment (~> 6.0)
+    - GoogleUtilities/UserDefaults (~> 6.0)
+  - GoogleAppMeasurement (6.1.7):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleDataTransport (3.2.0)
+  - GoogleDataTransportCCTSupport (1.2.3):
+    - GoogleDataTransport (~> 3.2)
+    - nanopb (~> 0.3.901)
+  - GoogleUtilities/AppDelegateSwizzler (6.4.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.4.0)
+  - GoogleUtilities/Logger (6.4.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.4.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.4.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.4.0)"
+  - GoogleUtilities/Reachability (6.4.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.4.0):
+    - GoogleUtilities/Logger
+  - HGCodeBaseUI (0.1.4):
+    - SnapKit (~> 5.0.0)
+    - Then
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - RxViewController (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - SnapKit (5.0.1)
+  - Then (2.6.0)
+
+DEPENDENCIES:
+  - Carte
+  - Firebase/Analytics
+  - HGCodeBaseUI
+  - RxSwift
+  - RxViewController
+  - SnapKit
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - Carte
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseInstanceID
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleUtilities
+    - HGCodeBaseUI
+    - nanopb
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - RxViewController
+    - SnapKit
+    - Then
+
+SPEC CHECKSUMS:
+  Carte: 6bcff4eaa894ff5b979d646de833fec96e04a38c
+  Firebase: 0219bb4782eb1406f1b9b0628a2e625484ce910d
+  FirebaseAnalytics: f68b9f3f1241385129ae0a83b63627fc420c05e5
+  FirebaseCore: 632e05cc5e1199d9147122c16d92305eb04c34bd
+  FirebaseCoreDiagnostics: 511f4f3ed7d440bb69127e8b97c2bc8befae639e
+  FirebaseCoreDiagnosticsInterop: e9b1b023157e3a2fc6418b5cb601e79b9af7b3a0
+  FirebaseInstanceID: 550df9be1f99f751d8fcde3ac342a1e21a0e6c42
+  GoogleAppMeasurement: db118eb61a97dd8c4f7014e368d3c335cbbcf80a
+  GoogleDataTransport: 8e9b210c97d55fbff306cc5468ff91b9cb32dcf5
+  GoogleDataTransportCCTSupport: 202d7cdf9c4a7d81a2bb7f7e7e1ba6faa421b1f2
+  GoogleUtilities: 29bd0d8f850efbd28cff6d99e8b7da1f8d236bcf
+  HGCodeBaseUI: dceaef1ffe7509d79cb07043152d7ef036228c0b
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  RxViewController: 7330a46e5c31cd680db169da4c9fc8676e975a81
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
+
+PODFILE CHECKSUM: a4125d8a0056cd4d8af799a4122a66cd1f614af9
+
+COCOAPODS: 1.8.3
