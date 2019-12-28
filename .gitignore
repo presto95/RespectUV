@@ -134,5 +134,6 @@ iOSInjectionProject/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 GoogleService-Info.plist
+KakaoOpenSDK.framework
 
 # End of https://www.gitignore.io/api/git,swift,xcode,firebase,cocoapods

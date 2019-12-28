@@ -60,32 +60,30 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.4.0):
     - GoogleUtilities/Logger
-  - HGCodeBaseUI (0.1.4):
-    - SnapKit (~> 5.0.0)
-    - Then
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - naveridlogin-sdk-ios (4.1.1)
+  - ReactorKit (2.0.1):
+    - RxSwift (~> 5.0)
   - RxCocoa (5.0.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
   - RxRelay (5.0.1):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
-  - RxViewController (1.0.0):
-    - RxCocoa (~> 5.0)
-    - RxSwift (~> 5.0)
   - SnapKit (5.0.1)
   - Then (2.6.0)
 
 DEPENDENCIES:
   - Carte
   - Firebase/Analytics
-  - HGCodeBaseUI
+  - naveridlogin-sdk-ios
+  - ReactorKit
+  - RxCocoa
   - RxSwift
-  - RxViewController
   - SnapKit
   - Then
 
@@ -102,12 +100,12 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
-    - HGCodeBaseUI
     - nanopb
+    - naveridlogin-sdk-ios
+    - ReactorKit
     - RxCocoa
     - RxRelay
     - RxSwift
-    - RxViewController
     - SnapKit
     - Then
 
@@ -123,15 +121,15 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 8e9b210c97d55fbff306cc5468ff91b9cb32dcf5
   GoogleDataTransportCCTSupport: 202d7cdf9c4a7d81a2bb7f7e7e1ba6faa421b1f2
   GoogleUtilities: 29bd0d8f850efbd28cff6d99e8b7da1f8d236bcf
-  HGCodeBaseUI: dceaef1ffe7509d79cb07043152d7ef036228c0b
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  naveridlogin-sdk-ios: ec62eeccdcdca7b9b1de50a28710ace2ac8f78dc
+  ReactorKit: a63c5e11e0fd32d59d672e54178b0ed2876b764b
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
-  RxViewController: 7330a46e5c31cd680db169da4c9fc8676e975a81
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
 
-PODFILE CHECKSUM: a4125d8a0056cd4d8af799a4122a66cd1f614af9
+PODFILE CHECKSUM: bcb77029f3c909bcfb9c41c7a7fb566046fbfed1
 
 COCOAPODS: 1.8.3
