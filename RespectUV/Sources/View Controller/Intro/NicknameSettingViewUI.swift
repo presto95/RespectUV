@@ -11,9 +11,10 @@ import UIKit
 final class NicknameSettingViewUI: UI {
   unowned var owner: NicknameSettingViewController
 
+  var viewTapGestureRecognizer: UITapGestureRecognizer!
   var titleLabel: UILabel!
   var nicknameTextField: UITextField!
-  var nextButton: UIButton!
+  var confirmButton: ConfirmButton!
 
   init(owner: NicknameSettingViewController) {
     self.owner = owner
@@ -23,6 +24,8 @@ final class NicknameSettingViewUI: UI {
   }
 
   func setupSubviews() {
+    viewTapGestureRecognizer = UITapGestureRecognizer()
+    view.addGestureRecognizer(viewTapGestureRecognizer)
     titleLabel = UILabel().then {
       $0.text = "닉네임 설정"
       $0.font = .systemFont(ofSize: 30, weight: .bold)
@@ -31,25 +34,30 @@ final class NicknameSettingViewUI: UI {
     nicknameTextField = UITextField().then {
       $0.borderStyle = .none
       $0.placeholder = "닉네임"
-      $0.font = .systemFont(ofSize: 40, weight: .bold)
+      $0.font = .systemFont(ofSize: 35, weight: .bold)
       $0.textColor = Colors.label
     }
-    nextButton = UIButton().then {
-      $0.layer.do {
-        $0.masksToBounds = true
-        $0.cornerRadius = 10
-      }
-      $0.setTitle("다음", for: .normal)
+    confirmButton = ConfirmButton().then {
       $0.isEnabled = false
     }
 
-    view.addSubviews(titleLabel, nicknameTextField, nextButton)
+    view.addSubviews(titleLabel, nicknameTextField, confirmButton)
   }
 
   func setupConstraints() {
-    nextButton.makeConstraints {
-      $0.leading.equalToSuperview().offset(16)
-      $0.trailing.equalToSuperview().offset(-16)
+    titleLabel.makeConstraints {
+      $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(40)
+      $0.leading.equalToSuperview().offset(20)
+      $0.trailing.equalToSuperview().offset(-20)
+    }
+    nicknameTextField.makeConstraints {
+      $0.top.equalTo(titleLabel.snp.bottom).offset(40)
+      $0.leading.equalTo(titleLabel.snp.leading)
+      $0.trailing.equalTo(titleLabel.snp.trailing)
+    }
+    confirmButton.makeConstraints {
+      $0.leading.equalToSuperview().offset(20)
+      $0.trailing.equalToSuperview().offset(-20)
       $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-16)
       $0.height.equalTo(44)
     }

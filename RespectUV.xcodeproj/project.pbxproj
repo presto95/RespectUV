@@ -34,14 +34,17 @@
 		1917E4E723B644660041FE11 /* InfoViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1917E4E623B644660041FE11 /* InfoViewReactor.swift */; };
 		1917E4E923B644700041FE11 /* MoreViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1917E4E823B644700041FE11 /* MoreViewReactor.swift */; };
 		1917E4EB23B724760041FE11 /* Reactive+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1917E4EA23B724760041FE11 /* Reactive+UIViewController.swift */; };
-		1917E4ED23B724F90041FE11 /* Reactive+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1917E4EC23B724F90041FE11 /* Reactive+UINavigationController.swift */; };
-		1917E4EF23B725AE0041FE11 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1917E4EE23B725AE0041FE11 /* FinishViewController.swift */; };
-		1917E4F123B725B60041FE11 /* FinishViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1917E4F023B725B60041FE11 /* FinishViewUI.swift */; };
-		1917E4F323B725BC0041FE11 /* FinishViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1917E4F223B725BC0041FE11 /* FinishViewReactor.swift */; };
 		196054F723B72E69000643DE /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196054F623B72E69000643DE /* KakaoOpenSDK.framework */; };
 		196054FA23B73828000643DE /* KakaoLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196054F923B73828000643DE /* KakaoLoginService.swift */; };
 		196054FC23B7392A000643DE /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196054FB23B7392A000643DE /* Log.swift */; };
 		196054FE23B7403D000643DE /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196054FD23B7403D000643DE /* LoginNavigationController.swift */; };
+		1960550023B8A9FC000643DE /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196054FF23B8A9FC000643DE /* UIStackView+.swift */; };
+		1960550F23B9E810000643DE /* NicknameChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960550E23B9E810000643DE /* NicknameChangeViewController.swift */; };
+		1960551323B9E822000643DE /* NicknameChangeViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960551223B9E822000643DE /* NicknameChangeViewUI.swift */; };
+		1960551523B9E829000643DE /* NicknameChangeViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960551423B9E829000643DE /* NicknameChangeViewReactor.swift */; };
+		1960551723BB76F0000643DE /* Reactive+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960551623BB76F0000643DE /* Reactive+UITextField.swift */; };
+		1960551D23BB7D5B000643DE /* MoreSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960551C23BB7D5B000643DE /* MoreSectionModel.swift */; };
+		1960551F23BB816F000643DE /* ConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960551E23BB816F000643DE /* ConfirmButton.swift */; };
 		196B65C823B5F87800CE7B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B65C723B5F87800CE7B9D /* AppDelegate.swift */; };
 		196B65D123B5F87A00CE7B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 196B65D023B5F87A00CE7B9D /* Assets.xcassets */; };
 		196B65D423B5F87A00CE7B9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 196B65D223B5F87A00CE7B9D /* LaunchScreen.storyboard */; };
@@ -87,14 +90,17 @@
 		1917E4E623B644660041FE11 /* InfoViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewReactor.swift; sourceTree = "<group>"; };
 		1917E4E823B644700041FE11 /* MoreViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewReactor.swift; sourceTree = "<group>"; };
 		1917E4EA23B724760041FE11 /* Reactive+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+UIViewController.swift"; sourceTree = "<group>"; };
-		1917E4EC23B724F90041FE11 /* Reactive+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+UINavigationController.swift"; sourceTree = "<group>"; };
-		1917E4EE23B725AE0041FE11 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
-		1917E4F023B725B60041FE11 /* FinishViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewUI.swift; sourceTree = "<group>"; };
-		1917E4F223B725BC0041FE11 /* FinishViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewReactor.swift; sourceTree = "<group>"; };
 		196054F623B72E69000643DE /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		196054F923B73828000643DE /* KakaoLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginService.swift; sourceTree = "<group>"; };
 		196054FB23B7392A000643DE /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		196054FD23B7403D000643DE /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
+		196054FF23B8A9FC000643DE /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		1960550E23B9E810000643DE /* NicknameChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameChangeViewController.swift; sourceTree = "<group>"; };
+		1960551223B9E822000643DE /* NicknameChangeViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameChangeViewUI.swift; sourceTree = "<group>"; };
+		1960551423B9E829000643DE /* NicknameChangeViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameChangeViewReactor.swift; sourceTree = "<group>"; };
+		1960551623BB76F0000643DE /* Reactive+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+UITextField.swift"; sourceTree = "<group>"; };
+		1960551C23BB7D5B000643DE /* MoreSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSectionModel.swift; sourceTree = "<group>"; };
+		1960551E23BB816F000643DE /* ConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButton.swift; sourceTree = "<group>"; };
 		196B65C423B5F87800CE7B9D /* RespectUV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RespectUV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		196B65C723B5F87800CE7B9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		196B65D023B5F87A00CE7B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -150,7 +156,8 @@
 				1917E4CF23B62FA20041FE11 /* UIEdgeInsets+.swift */,
 				1917E4CD23B62FA20041FE11 /* UITableView+.swift */,
 				1917E4EA23B724760041FE11 /* Reactive+UIViewController.swift */,
-				1917E4EC23B724F90041FE11 /* Reactive+UINavigationController.swift */,
+				196054FF23B8A9FC000643DE /* UIStackView+.swift */,
+				1960551623BB76F0000643DE /* Reactive+UITextField.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -161,6 +168,75 @@
 				196054F923B73828000643DE /* KakaoLoginService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		1960550123B9C0DB000643DE /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				196054FD23B7403D000643DE /* LoginNavigationController.swift */,
+				196B65E323B61F1000CE7B9D /* LoginViewController.swift */,
+				1917E4DC23B640590041FE11 /* LoginViewReactor.swift */,
+				196B65E923B61F8400CE7B9D /* LoginViewUI.swift */,
+				196B65E523B61F2A00CE7B9D /* NicknameSettingViewController.swift */,
+				1917E4E023B642080041FE11 /* NicknameSettingViewReactor.swift */,
+				196B65F823B623B400CE7B9D /* NicknameSettingViewUI.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		1960550223B9C0E5000643DE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1960550B23B9DCE0000643DE /* Home */,
+				1960550C23B9DCE5000643DE /* Info */,
+				1960550D23B9DCEA000643DE /* More */,
+				1917E4AD23B629360041FE11 /* MainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1960550B23B9DCE0000643DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1917E4AF23B629F10041FE11 /* HomeViewController.swift */,
+				1917E4E423B643F10041FE11 /* HomeViewReactor.swift */,
+				1917E4B123B629F50041FE11 /* HomeViewUI.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1960550C23B9DCE5000643DE /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				1917E4B523B62AA20041FE11 /* InfoViewController.swift */,
+				1917E4E623B644660041FE11 /* InfoViewReactor.swift */,
+				1917E4B723B62AA80041FE11 /* InfoViewUI.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		1960550D23B9DCEA000643DE /* More */ = {
+			isa = PBXGroup;
+			children = (
+				1917E4BB23B62AB30041FE11 /* MoreViewController.swift */,
+				1917E4E823B644700041FE11 /* MoreViewReactor.swift */,
+				1917E4BD23B62AB70041FE11 /* MoreViewUI.swift */,
+				196B65E723B61F6300CE7B9D /* BPMStandardDefaultsSettingViewController.swift */,
+				1917E4E223B6432F0041FE11 /* BPMStandardDefaultsSettingViewReactor.swift */,
+				1917E4AA23B626E00041FE11 /* BPMStandardDefaultSettingViewUI.swift */,
+				1960550E23B9E810000643DE /* NicknameChangeViewController.swift */,
+				1960551423B9E829000643DE /* NicknameChangeViewReactor.swift */,
+				1960551223B9E822000643DE /* NicknameChangeViewUI.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		1960551823BB78E4000643DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1960551C23BB7D5B000643DE /* MoreSectionModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		196B65BB23B5F87800CE7B9D = {
@@ -204,6 +280,7 @@
 		196B65E023B61D5300CE7B9D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1960551823BB78E4000643DE /* Model */,
 				196054F823B7381D000643DE /* Service */,
 				1917E4C323B62F5C0041FE11 /* Extension */,
 				1917E4AC23B627320041FE11 /* Common */,
@@ -237,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				196B65F223B6204000CE7B9D /* RootView.swift */,
+				1960551E23BB816F000643DE /* ConfirmButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -245,29 +323,8 @@
 			isa = PBXGroup;
 			children = (
 				1917E4D823B63F1B0041FE11 /* BaseViewController.swift */,
-				196054FD23B7403D000643DE /* LoginNavigationController.swift */,
-				196B65E323B61F1000CE7B9D /* LoginViewController.swift */,
-				1917E4DC23B640590041FE11 /* LoginViewReactor.swift */,
-				196B65E923B61F8400CE7B9D /* LoginViewUI.swift */,
-				196B65E523B61F2A00CE7B9D /* NicknameSettingViewController.swift */,
-				1917E4E023B642080041FE11 /* NicknameSettingViewReactor.swift */,
-				196B65F823B623B400CE7B9D /* NicknameSettingViewUI.swift */,
-				196B65E723B61F6300CE7B9D /* BPMStandardDefaultsSettingViewController.swift */,
-				1917E4E223B6432F0041FE11 /* BPMStandardDefaultsSettingViewReactor.swift */,
-				1917E4AA23B626E00041FE11 /* BPMStandardDefaultSettingViewUI.swift */,
-				1917E4EE23B725AE0041FE11 /* FinishViewController.swift */,
-				1917E4F023B725B60041FE11 /* FinishViewUI.swift */,
-				1917E4F223B725BC0041FE11 /* FinishViewReactor.swift */,
-				1917E4AD23B629360041FE11 /* MainTabBarController.swift */,
-				1917E4AF23B629F10041FE11 /* HomeViewController.swift */,
-				1917E4E423B643F10041FE11 /* HomeViewReactor.swift */,
-				1917E4B123B629F50041FE11 /* HomeViewUI.swift */,
-				1917E4B523B62AA20041FE11 /* InfoViewController.swift */,
-				1917E4E623B644660041FE11 /* InfoViewReactor.swift */,
-				1917E4B723B62AA80041FE11 /* InfoViewUI.swift */,
-				1917E4BB23B62AB30041FE11 /* MoreViewController.swift */,
-				1917E4E823B644700041FE11 /* MoreViewReactor.swift */,
-				1917E4BD23B62AB70041FE11 /* MoreViewUI.swift */,
+				1960550123B9C0DB000643DE /* Intro */,
+				1960550223B9C0E5000643DE /* Main */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -445,8 +502,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1960551323B9E822000643DE /* NicknameChangeViewUI.swift in Sources */,
 				1917E4BC23B62AB30041FE11 /* MoreViewController.swift in Sources */,
 				196054FC23B7392A000643DE /* Log.swift in Sources */,
+				1960550023B8A9FC000643DE /* UIStackView+.swift in Sources */,
 				1917E4E323B6432F0041FE11 /* BPMStandardDefaultsSettingViewReactor.swift in Sources */,
 				1917E4D623B62FA20041FE11 /* UIEdgeInsets+.swift in Sources */,
 				196B65F923B623B400CE7B9D /* NicknameSettingViewUI.swift in Sources */,
@@ -455,36 +514,37 @@
 				196054FE23B7403D000643DE /* LoginNavigationController.swift in Sources */,
 				1917E4BE23B62AB70041FE11 /* MoreViewUI.swift in Sources */,
 				196054FA23B73828000643DE /* KakaoLoginService.swift in Sources */,
-				1917E4F123B725B60041FE11 /* FinishViewUI.swift in Sources */,
 				1917E4D723B62FA20041FE11 /* Reactive+UICollectionView.swift in Sources */,
 				1917E4D923B63F1B0041FE11 /* BaseViewController.swift in Sources */,
+				1960551D23BB7D5B000643DE /* MoreSectionModel.swift in Sources */,
 				1917E4D223B62FA20041FE11 /* Reactive+UITableView.swift in Sources */,
 				1917E4C723B62F880041FE11 /* UIView+SnapKit.swift in Sources */,
 				196B65F323B6204000CE7B9D /* RootView.swift in Sources */,
 				1917E4E123B642080041FE11 /* NicknameSettingViewReactor.swift in Sources */,
 				196B65F523B621F800CE7B9D /* Colors.swift in Sources */,
-				1917E4ED23B724F90041FE11 /* Reactive+UINavigationController.swift in Sources */,
+				1960550F23B9E810000643DE /* NicknameChangeViewController.swift in Sources */,
 				1917E4E523B643F10041FE11 /* HomeViewReactor.swift in Sources */,
 				1917E4B623B62AA20041FE11 /* InfoViewController.swift in Sources */,
 				196B65E423B61F1000CE7B9D /* LoginViewController.swift in Sources */,
+				1960551723BB76F0000643DE /* Reactive+UITextField.swift in Sources */,
 				196B65E823B61F6300CE7B9D /* BPMStandardDefaultsSettingViewController.swift in Sources */,
 				1917E4D323B62FA20041FE11 /* UICollectionView+.swift in Sources */,
 				1917E4B023B629F10041FE11 /* HomeViewController.swift in Sources */,
 				196B65EA23B61F8400CE7B9D /* LoginViewUI.swift in Sources */,
 				1917E4AB23B626E00041FE11 /* BPMStandardDefaultSettingViewUI.swift in Sources */,
 				1917E4C523B62F770041FE11 /* UIView+.swift in Sources */,
-				1917E4F323B725BC0041FE11 /* FinishViewReactor.swift in Sources */,
 				1917E4D123B62FA20041FE11 /* Result+.swift in Sources */,
 				1917E4EB23B724760041FE11 /* Reactive+UIViewController.swift in Sources */,
 				196B65EF23B6202700CE7B9D /* UIOwner.swift in Sources */,
 				196B65E623B61F2A00CE7B9D /* NicknameSettingViewController.swift in Sources */,
 				1917E4D523B62FA20041FE11 /* UIAlertController+.swift in Sources */,
-				1917E4EF23B725AE0041FE11 /* FinishViewController.swift in Sources */,
 				1917E4A923B626210041FE11 /* Configuration.swift in Sources */,
 				1917E4E723B644660041FE11 /* InfoViewReactor.swift in Sources */,
 				1917E4AE23B629360041FE11 /* MainTabBarController.swift in Sources */,
+				1960551523B9E829000643DE /* NicknameChangeViewReactor.swift in Sources */,
 				1917E4B823B62AA80041FE11 /* InfoViewUI.swift in Sources */,
 				196B65C823B5F87800CE7B9D /* AppDelegate.swift in Sources */,
+				1960551F23BB816F000643DE /* ConfirmButton.swift in Sources */,
 				1917E4B223B629F50041FE11 /* HomeViewUI.swift in Sources */,
 				1917E4C923B62F940041FE11 /* NSObject+.swift in Sources */,
 				1917E4E923B644700041FE11 /* MoreViewReactor.swift in Sources */,

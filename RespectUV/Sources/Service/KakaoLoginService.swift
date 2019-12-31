@@ -7,19 +7,17 @@
 //
 
 import KakaoOpenSDK
+import RxSwift
+
+enum LoginError: Error {
+  case specific(Error)
+  case unknown
+}
 
 final class KakaoLoginService {
   static let shared = KakaoLoginService()
 
   private let session = KOSession.shared()!
-
-  func close() {
-    session.close()
-  }
-
-  var isOpen: Bool {
-    return session.isOpen()
-  }
 
   var accessToken: String? {
     return session.token?.accessToken
@@ -29,12 +27,37 @@ final class KakaoLoginService {
     return session.token?.refreshToken
   }
 
-  func open(withCompletionHandler handler: @escaping (Error?) -> Void) {
-    session.open(completionHandler: handler)
+  func login() -> Single<Void> {
+    return .create { observer in
+      self.session.open { error in
+        if let error = error {
+          Log.error(error.localizedDescription)
+          observer(.error(LoginError.specific(error)))
+        }
+        if self.session.isOpen() {
+          Log.debug("kakao login success")
+          observer(.success(Void()))
+        } else {
+          Log.error("kakao login fail")
+          observer(.error(LoginError.unknown))
+        }
+      }
+      return Disposables.create {
+        self.session.close()
+      }
+    }
   }
 
-  func logout(withCompletionHandler handler: @escaping (Bool, Error?) -> Void) {
-    session.logoutAndClose(completionHandler: handler)
+  func logout() -> Single<Bool> {
+    return .create { observer in
+      self.session.logoutAndClose { flag, error in
+        if let error = error {
+          observer(.error(LoginError.specific(error)))
+        }
+        observer(.success(flag))
+      }
+      return Disposables.create()
+    }
   }
 
   func isKakaoAccountLoginCallback(_ url: URL?) -> Bool {

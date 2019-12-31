@@ -17,18 +17,17 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    let configuration = Configuration()
-    if configuration.hasLogin {
-    } else {
-      configuration.bpmStandard = 450
-    }
-
-    let rootViewController = LoginViewController()
-//    let rootViewController = MainTabBarController()
     window = .init()
-    window?.rootViewController = LoginNavigationController(rootViewController: rootViewController)
-    rootViewController.reactor = LoginViewReactor()
+    let configuration = Configuration.shared
+    if !configuration.isSettingFinished {
+      configuration.bpmStandard = 450
+      let rootViewController = LoginViewController(reactor: LoginViewReactor())
+      window?.rootViewController = LoginNavigationController(rootViewController: rootViewController)
+    } else {
+      window?.rootViewController = MainTabBarController()
+    }
     window?.makeKeyAndVisible()
+
     FirebaseApp.configure()
     return true
   }

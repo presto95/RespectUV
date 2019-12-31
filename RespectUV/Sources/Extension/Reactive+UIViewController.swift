@@ -23,4 +23,16 @@ extension Reactive where Base: UIViewController {
       target.dismiss(animated: animated, completion: completion)
     }
   }
+
+  func push(animated: Bool = true) -> Binder<UIViewController> {
+    return .init(base) { target, viewController in
+      target.navigationController?.pushViewController(viewController, animated: animated)
+    }
+  }
+
+  func pop(animated: Bool = true) -> Binder<Void> {
+    return .init(base) { target, _ in
+      target.navigationController?.popViewController(animated: animated)
+    }
+  }
 }

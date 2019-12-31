@@ -39,9 +39,9 @@ final class LoginViewReactor: Reactor {
     case .loginViaNaver:
       break
     case .loginViaKakao:
-      return loginViaKakao()
-        .filter { $0 }
-        .map { _ in Mutation.loginViaKakao }
+      return KakaoLoginService.shared.login()
+        .map { Mutation.loginViaKakao }
+        .asObservable()
     case .loginViaApple:
       break
     }
@@ -61,26 +61,5 @@ final class LoginViewReactor: Reactor {
       break
     }
     return state
-  }
-}
-
-private extension LoginViewReactor {
-  func loginViaKakao() -> Observable<Bool> {
-    return .create { observer in
-      KakaoLoginService.shared.open { error in
-        if let error = error {
-          Log.error(error.localizedDescription)
-          observer.onNext(false)
-        }
-        if KakaoLoginService.shared.isOpen {
-          Log.debug("login success")
-          observer.onNext(true)
-        } else {
-          Log.error("login failed")
-          observer.onNext(false)
-        }
-      }
-      return Disposables.create()
-    }
   }
 }

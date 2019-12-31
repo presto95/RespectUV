@@ -21,7 +21,9 @@ final class MoreViewUI: UI {
   }
 
   func setupSubviews() {
-    tableView = UITableView(frame: .zero, style: .grouped)
+    tableView = UITableView(frame: .zero, style: .grouped).then {
+      $0.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
 
     view.addSubviews(tableView)
   }

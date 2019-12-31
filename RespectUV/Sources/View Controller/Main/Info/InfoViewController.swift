@@ -15,8 +15,14 @@ final class InfoViewController: BaseViewController, View, UIOwner {
 
   var ui: InfoViewUI!
 
-  override func loadView() {
+  init(reactor: Reactor) {
+    super.init()
     ui = .init(owner: self)
+    self.reactor = reactor
+  }
+
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
   }
 
   func bind(reactor: Reactor) {}

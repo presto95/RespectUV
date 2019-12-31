@@ -11,38 +11,35 @@ import RxSwift
 
 final class BPMStandardDefaultsSettingViewReactor: Reactor {
   enum Action {
+    case viewWillAppear
     case changeStandardBPM(Int)
-    case tapNextButton
+    case tapConfirmButton
   }
 
   enum Mutation {
     case setStandardBPM(Int)
     case saveStandardBPM
-    case pushConfirmView(Bool)
+    case popView(Bool)
   }
 
   struct State {
-    var standardBPM: Int
-    var isNextButtonSelected = false
+    var standardBPM = Configuration.shared.bpmStandard
+    var viewWillPop = false
   }
 
-  let initialState: State
-
-  private let configuration = Configuration()
-
-  init() {
-    initialState = .init(standardBPM: configuration.bpmStandard)
-  }
+  let initialState = State()
 
   func mutate(action: Action) -> Observable<Mutation> {
     switch action {
+    case .viewWillAppear:
+      return .just(.setStandardBPM(Configuration.shared.bpmStandard))
     case let .changeStandardBPM(value):
       return .just(.setStandardBPM(value))
-    case .tapNextButton:
-      return Observable.concat([
-        Observable.just(Mutation.saveStandardBPM),
-        Observable.just(Mutation.pushConfirmView(true)),
-        Observable.just(Mutation.pushConfirmView(false)),
+    case .tapConfirmButton:
+      return .from([
+        .saveStandardBPM,
+        .popView(true),
+        .popView(false),
       ])
     }
   }
@@ -53,9 +50,9 @@ final class BPMStandardDefaultsSettingViewReactor: Reactor {
     case let .setStandardBPM(value):
       state.standardBPM = value
     case .saveStandardBPM:
-      configuration.bpmStandard = currentState.standardBPM
-    case let .pushConfirmView(bool):
-      state.isNextButtonSelected = bool
+      Configuration.shared.bpmStandard = currentState.standardBPM
+    case let .popView(bool):
+      state.viewWillPop = bool
     }
     return state
   }

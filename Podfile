@@ -3,14 +3,16 @@ platform :ios, '11.0'
 target 'RespectUV' do
   use_frameworks!
 
+  pod 'naveridlogin-sdk-ios'
+  pod 'Carte'
+  pod 'Firebase/Analytics'
   pod 'ReactorKit'
-  pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxDataSources'
+  pod 'RxSwift'
+  pod 'RxViewController'
   pod 'SnapKit'
   pod 'Then'
-  pod 'Firebase/Analytics'
-  pod 'Carte'
-  pod 'naveridlogin-sdk-ios'
 
 end
 

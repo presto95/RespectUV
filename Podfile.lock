@@ -1,5 +1,6 @@
 PODS:
   - Carte (2.2.1)
+  - Differentiator (4.0.1)
   - Firebase/Analytics (6.14.0):
     - Firebase/Core
   - Firebase/Core (6.14.0):
@@ -71,9 +72,16 @@ PODS:
   - RxCocoa (5.0.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
   - RxRelay (5.0.1):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
+  - RxViewController (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
   - SnapKit (5.0.1)
   - Then (2.6.0)
 
@@ -83,13 +91,16 @@ DEPENDENCIES:
   - naveridlogin-sdk-ios
   - ReactorKit
   - RxCocoa
+  - RxDataSources
   - RxSwift
+  - RxViewController
   - SnapKit
   - Then
 
 SPEC REPOS:
   trunk:
     - Carte
+    - Differentiator
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -104,13 +115,16 @@ SPEC REPOS:
     - naveridlogin-sdk-ios
     - ReactorKit
     - RxCocoa
+    - RxDataSources
     - RxRelay
     - RxSwift
+    - RxViewController
     - SnapKit
     - Then
 
 SPEC CHECKSUMS:
   Carte: 6bcff4eaa894ff5b979d646de833fec96e04a38c
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   Firebase: 0219bb4782eb1406f1b9b0628a2e625484ce910d
   FirebaseAnalytics: f68b9f3f1241385129ae0a83b63627fc420c05e5
   FirebaseCore: 632e05cc5e1199d9147122c16d92305eb04c34bd
@@ -125,11 +139,13 @@ SPEC CHECKSUMS:
   naveridlogin-sdk-ios: ec62eeccdcdca7b9b1de50a28710ace2ac8f78dc
   ReactorKit: a63c5e11e0fd32d59d672e54178b0ed2876b764b
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  RxViewController: 7330a46e5c31cd680db169da4c9fc8676e975a81
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
 
-PODFILE CHECKSUM: bcb77029f3c909bcfb9c41c7a7fb566046fbfed1
+PODFILE CHECKSUM: 358e218202c9d0df6ca0ac58384e21fb3b769da0
 
 COCOAPODS: 1.8.3

@@ -11,8 +11,12 @@ import Foundation
 final class Configuration {
   private enum Key {
     static let bpmStandard = "bpmStandard"
-    static let hasLogin = "hasLogin"
+    static let nickname = "nickname"
+    static let isSettingFinished = "isSettingFinished"
   }
+
+  static let shared = Configuration()
+  private init() {}
 
   private let defaults = UserDefaults.standard
 
@@ -25,12 +29,21 @@ final class Configuration {
     }
   }
 
-  var hasLogin: Bool {
+  var isSettingFinished: Bool {
     get {
-      return defaults.bool(forKey: Key.hasLogin)
+      return defaults.bool(forKey: Key.isSettingFinished)
     }
     set {
-      defaults.set(newValue, forKey: Key.hasLogin)
+      defaults.set(newValue, forKey: Key.isSettingFinished)
+    }
+  }
+
+  var nickname: String {
+    get {
+      return defaults.string(forKey: Key.nickname)!
+    }
+    set {
+      defaults.set(newValue, forKey: Key.nickname)
     }
   }
 }

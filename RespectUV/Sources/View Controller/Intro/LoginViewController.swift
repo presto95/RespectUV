@@ -15,11 +15,22 @@ final class LoginViewController: BaseViewController, View, UIOwner {
 
   var ui: LoginViewUI!
 
-  func bind(reactor: Reactor) {
-    if ui == nil {
-      ui = .init(owner: self)
-    }
+  init(reactor: Reactor) {
+    super.init()
+    ui = .init(owner: self)
+    self.reactor = reactor
+  }
 
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    ui.animate()
+  }
+
+  func bind(reactor: Reactor) {
     ui.loginViaKakaoButton.rx.tap
       .map { Reactor.Action.loginViaKakao }
       .bind(to: reactor.action)
@@ -28,12 +39,8 @@ final class LoginViewController: BaseViewController, View, UIOwner {
     reactor.state.map { $0.hasLogin }
       .distinctUntilChanged()
       .filter { $0 }
-      .map { _ in
-        NicknameSettingViewController().then {
-          $0.reactor = NicknameSettingViewReactor()
-        }
-      }
-      .bind(to: navigationController!.rx.push())
+      .map { _ in NicknameSettingViewController(reactor: NicknameSettingViewReactor()) }
+      .bind(to: rx.push())
       .disposed(by: disposeBag)
   }
 }
