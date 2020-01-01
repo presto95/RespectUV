@@ -21,6 +21,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     let configuration = Configuration.shared
     if !configuration.isSettingFinished {
       configuration.bpmStandard = 450
+      configuration.mainTunes = ._4b
       let rootViewController = LoginViewController(reactor: LoginViewReactor())
       window?.rootViewController = LoginNavigationController(rootViewController: rootViewController)
     } else {

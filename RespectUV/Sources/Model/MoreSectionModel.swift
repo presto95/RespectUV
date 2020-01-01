@@ -8,4 +8,19 @@
 
 import RxDataSources
 
-typealias MoreSectionModel = SectionModel<String, String>
+struct MoreSectionModel {
+  struct Item {
+    var text: String?
+    var detail: String?
+  }
+
+  var header: String?
+  var items: [Item]
+}
+
+extension MoreSectionModel: SectionModelType {
+  init(original: MoreSectionModel, items: [MoreSectionModel.Item]) {
+    self = original
+    self.items = items
+  }
+}

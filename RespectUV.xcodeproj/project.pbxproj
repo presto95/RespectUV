@@ -45,6 +45,20 @@
 		1960551723BB76F0000643DE /* Reactive+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960551623BB76F0000643DE /* Reactive+UITextField.swift */; };
 		1960551D23BB7D5B000643DE /* MoreSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960551C23BB7D5B000643DE /* MoreSectionModel.swift */; };
 		1960551F23BB816F000643DE /* ConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960551E23BB816F000643DE /* ConfirmButton.swift */; };
+		1960552123BB877B000643DE /* MoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960552023BB877B000643DE /* MoreCell.swift */; };
+		1960552523BB8A4A000643DE /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960552423BB8A4A000643DE /* Song.swift */; };
+		1960552723BB8BFE000643DE /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960552623BB8BFE000643DE /* LocalizedString.swift */; };
+		1960552923BB8C1E000643DE /* BPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960552823BB8C1E000643DE /* BPM.swift */; };
+		1960552D23BB8C42000643DE /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960552C23BB8C42000643DE /* Series.swift */; };
+		1960552F23BB8C57000643DE /* Tunes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960552E23BB8C57000643DE /* Tunes.swift */; };
+		1960553123BB8D0E000643DE /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960553023BB8D0E000643DE /* Difficulty.swift */; };
+		1960553323BB9B46000643DE /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960553223BB9B46000643DE /* Images.swift */; };
+		1960553723BBA8A7000643DE /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960553623BBA8A7000643DE /* Speed.swift */; };
+		1960553923BC62D0000643DE /* RxMailCompose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960553823BC62D0000643DE /* RxMailCompose.swift */; };
+		1960553B23BC69E9000643DE /* PresentationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960553A23BC69E9000643DE /* PresentationType.swift */; };
+		1960553D23BC6D5D000643DE /* MainTunesChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960553C23BC6D5D000643DE /* MainTunesChangeViewController.swift */; };
+		1960553F23BC6D67000643DE /* MainTunesChangeViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960553E23BC6D67000643DE /* MainTunesChangeViewReactor.swift */; };
+		1960554123BC6D6D000643DE /* MainTunesChangeViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960554023BC6D6D000643DE /* MainTunesChangeViewUI.swift */; };
 		196B65C823B5F87800CE7B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B65C723B5F87800CE7B9D /* AppDelegate.swift */; };
 		196B65D123B5F87A00CE7B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 196B65D023B5F87A00CE7B9D /* Assets.xcassets */; };
 		196B65D423B5F87A00CE7B9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 196B65D223B5F87A00CE7B9D /* LaunchScreen.storyboard */; };
@@ -101,6 +115,20 @@
 		1960551623BB76F0000643DE /* Reactive+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+UITextField.swift"; sourceTree = "<group>"; };
 		1960551C23BB7D5B000643DE /* MoreSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSectionModel.swift; sourceTree = "<group>"; };
 		1960551E23BB816F000643DE /* ConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButton.swift; sourceTree = "<group>"; };
+		1960552023BB877B000643DE /* MoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCell.swift; sourceTree = "<group>"; };
+		1960552423BB8A4A000643DE /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		1960552623BB8BFE000643DE /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
+		1960552823BB8C1E000643DE /* BPM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPM.swift; sourceTree = "<group>"; };
+		1960552C23BB8C42000643DE /* Series.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Series.swift; sourceTree = "<group>"; };
+		1960552E23BB8C57000643DE /* Tunes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tunes.swift; sourceTree = "<group>"; };
+		1960553023BB8D0E000643DE /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		1960553223BB9B46000643DE /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		1960553623BBA8A7000643DE /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
+		1960553823BC62D0000643DE /* RxMailCompose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMailCompose.swift; sourceTree = "<group>"; };
+		1960553A23BC69E9000643DE /* PresentationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationType.swift; sourceTree = "<group>"; };
+		1960553C23BC6D5D000643DE /* MainTunesChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTunesChangeViewController.swift; sourceTree = "<group>"; };
+		1960553E23BC6D67000643DE /* MainTunesChangeViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTunesChangeViewReactor.swift; sourceTree = "<group>"; };
+		1960554023BC6D6D000643DE /* MainTunesChangeViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTunesChangeViewUI.swift; sourceTree = "<group>"; };
 		196B65C423B5F87800CE7B9D /* RespectUV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RespectUV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		196B65C723B5F87800CE7B9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		196B65D023B5F87A00CE7B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +166,14 @@
 			children = (
 				1917E4A823B626210041FE11 /* Configuration.swift */,
 				196054FB23B7392A000643DE /* Log.swift */,
+				1960552423BB8A4A000643DE /* Song.swift */,
+				1960552623BB8BFE000643DE /* LocalizedString.swift */,
+				1960552823BB8C1E000643DE /* BPM.swift */,
+				1960552C23BB8C42000643DE /* Series.swift */,
+				1960552E23BB8C57000643DE /* Tunes.swift */,
+				1960553023BB8D0E000643DE /* Difficulty.swift */,
+				1960553623BBA8A7000643DE /* Speed.swift */,
+				1960553A23BC69E9000643DE /* PresentationType.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -166,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				196054F923B73828000643DE /* KakaoLoginService.swift */,
+				1960553823BC62D0000643DE /* RxMailCompose.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -187,10 +224,10 @@
 		1960550223B9C0E5000643DE /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1917E4AD23B629360041FE11 /* MainTabBarController.swift */,
 				1960550B23B9DCE0000643DE /* Home */,
 				1960550C23B9DCE5000643DE /* Info */,
 				1960550D23B9DCEA000643DE /* More */,
-				1917E4AD23B629360041FE11 /* MainTabBarController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -224,6 +261,9 @@
 				196B65E723B61F6300CE7B9D /* BPMStandardDefaultsSettingViewController.swift */,
 				1917E4E223B6432F0041FE11 /* BPMStandardDefaultsSettingViewReactor.swift */,
 				1917E4AA23B626E00041FE11 /* BPMStandardDefaultSettingViewUI.swift */,
+				1960553C23BC6D5D000643DE /* MainTunesChangeViewController.swift */,
+				1960553E23BC6D67000643DE /* MainTunesChangeViewReactor.swift */,
+				1960554023BC6D6D000643DE /* MainTunesChangeViewUI.swift */,
 				1960550E23B9E810000643DE /* NicknameChangeViewController.swift */,
 				1960551423B9E829000643DE /* NicknameChangeViewReactor.swift */,
 				1960551223B9E822000643DE /* NicknameChangeViewUI.swift */,
@@ -273,6 +313,7 @@
 				196B65D223B5F87A00CE7B9D /* LaunchScreen.storyboard */,
 				196B65D023B5F87A00CE7B9D /* Assets.xcassets */,
 				196B65F423B621F800CE7B9D /* Colors.swift */,
+				1960553223BB9B46000643DE /* Images.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -315,6 +356,7 @@
 			children = (
 				196B65F223B6204000CE7B9D /* RootView.swift */,
 				1960551E23BB816F000643DE /* ConfirmButton.swift */,
+				1960552023BB877B000643DE /* MoreCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -502,15 +544,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1960552723BB8BFE000643DE /* LocalizedString.swift in Sources */,
+				1960552923BB8C1E000643DE /* BPM.swift in Sources */,
+				1960552D23BB8C42000643DE /* Series.swift in Sources */,
+				1960552523BB8A4A000643DE /* Song.swift in Sources */,
 				1960551323B9E822000643DE /* NicknameChangeViewUI.swift in Sources */,
 				1917E4BC23B62AB30041FE11 /* MoreViewController.swift in Sources */,
+				1960553D23BC6D5D000643DE /* MainTunesChangeViewController.swift in Sources */,
 				196054FC23B7392A000643DE /* Log.swift in Sources */,
+				1960552F23BB8C57000643DE /* Tunes.swift in Sources */,
 				1960550023B8A9FC000643DE /* UIStackView+.swift in Sources */,
+				1960553B23BC69E9000643DE /* PresentationType.swift in Sources */,
 				1917E4E323B6432F0041FE11 /* BPMStandardDefaultsSettingViewReactor.swift in Sources */,
 				1917E4D623B62FA20041FE11 /* UIEdgeInsets+.swift in Sources */,
 				196B65F923B623B400CE7B9D /* NicknameSettingViewUI.swift in Sources */,
 				1917E4DD23B640590041FE11 /* LoginViewReactor.swift in Sources */,
 				1917E4D423B62FA20041FE11 /* UITableView+.swift in Sources */,
+				1960554123BC6D6D000643DE /* MainTunesChangeViewUI.swift in Sources */,
 				196054FE23B7403D000643DE /* LoginNavigationController.swift in Sources */,
 				1917E4BE23B62AB70041FE11 /* MoreViewUI.swift in Sources */,
 				196054FA23B73828000643DE /* KakaoLoginService.swift in Sources */,
@@ -518,6 +568,7 @@
 				1917E4D923B63F1B0041FE11 /* BaseViewController.swift in Sources */,
 				1960551D23BB7D5B000643DE /* MoreSectionModel.swift in Sources */,
 				1917E4D223B62FA20041FE11 /* Reactive+UITableView.swift in Sources */,
+				1960553323BB9B46000643DE /* Images.swift in Sources */,
 				1917E4C723B62F880041FE11 /* UIView+SnapKit.swift in Sources */,
 				196B65F323B6204000CE7B9D /* RootView.swift in Sources */,
 				1917E4E123B642080041FE11 /* NicknameSettingViewReactor.swift in Sources */,
@@ -533,19 +584,24 @@
 				196B65EA23B61F8400CE7B9D /* LoginViewUI.swift in Sources */,
 				1917E4AB23B626E00041FE11 /* BPMStandardDefaultSettingViewUI.swift in Sources */,
 				1917E4C523B62F770041FE11 /* UIView+.swift in Sources */,
+				1960553123BB8D0E000643DE /* Difficulty.swift in Sources */,
 				1917E4D123B62FA20041FE11 /* Result+.swift in Sources */,
 				1917E4EB23B724760041FE11 /* Reactive+UIViewController.swift in Sources */,
 				196B65EF23B6202700CE7B9D /* UIOwner.swift in Sources */,
 				196B65E623B61F2A00CE7B9D /* NicknameSettingViewController.swift in Sources */,
+				1960553F23BC6D67000643DE /* MainTunesChangeViewReactor.swift in Sources */,
 				1917E4D523B62FA20041FE11 /* UIAlertController+.swift in Sources */,
 				1917E4A923B626210041FE11 /* Configuration.swift in Sources */,
+				1960553723BBA8A7000643DE /* Speed.swift in Sources */,
 				1917E4E723B644660041FE11 /* InfoViewReactor.swift in Sources */,
 				1917E4AE23B629360041FE11 /* MainTabBarController.swift in Sources */,
 				1960551523B9E829000643DE /* NicknameChangeViewReactor.swift in Sources */,
 				1917E4B823B62AA80041FE11 /* InfoViewUI.swift in Sources */,
+				1960553923BC62D0000643DE /* RxMailCompose.swift in Sources */,
 				196B65C823B5F87800CE7B9D /* AppDelegate.swift in Sources */,
 				1960551F23BB816F000643DE /* ConfirmButton.swift in Sources */,
 				1917E4B223B629F50041FE11 /* HomeViewUI.swift in Sources */,
+				1960552123BB877B000643DE /* MoreCell.swift in Sources */,
 				1917E4C923B62F940041FE11 /* NSObject+.swift in Sources */,
 				1917E4E923B644700041FE11 /* MoreViewReactor.swift in Sources */,
 				196B65ED23B6202300CE7B9D /* UI.swift in Sources */,

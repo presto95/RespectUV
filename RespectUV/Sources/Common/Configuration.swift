@@ -11,6 +11,7 @@ import Foundation
 final class Configuration {
   private enum Key {
     static let bpmStandard = "bpmStandard"
+    static let mainTunes = "mainTunes"
     static let nickname = "nickname"
     static let isSettingFinished = "isSettingFinished"
   }
@@ -26,6 +27,16 @@ final class Configuration {
     }
     set {
       defaults.set(newValue, forKey: Key.bpmStandard)
+    }
+  }
+
+  var mainTunes: Tunes {
+    get {
+      let tunes = defaults.string(forKey: Key.mainTunes) ?? "4B"
+      return Tunes(string: tunes)
+    }
+    set {
+      defaults.set(newValue.description, forKey: Key.mainTunes)
     }
   }
 

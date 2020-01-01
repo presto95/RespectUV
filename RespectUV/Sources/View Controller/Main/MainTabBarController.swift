@@ -13,15 +13,15 @@ final class MainTabBarController: UITabBarController {
     super.viewDidLoad()
     let homeTabBarItem = UITabBarItem().then {
       $0.title = "홈"
-      $0.image = UIImage(imageLiteralResourceName: "home")
+      $0.image = Images.home
     }
     let infoTabBarItem = UITabBarItem().then {
       $0.title = "정보"
-      $0.image = UIImage(imageLiteralResourceName: "info")
+      $0.image = Images.info
     }
     let moreTabBarItem = UITabBarItem().then {
       $0.title = "더보기"
-      $0.image = UIImage(imageLiteralResourceName: "more")
+      $0.image = Images.more
     }
     let homeViewController = HomeViewController(reactor: HomeViewReactor()).then {
       $0.title = "홈"
@@ -35,16 +35,19 @@ final class MainTabBarController: UITabBarController {
       $0.title = "더보기"
       $0.tabBarItem = moreTabBarItem
     }
+    let homeNavigationController = UINavigationController(rootViewController: homeViewController).then {
+      $0.navigationBar.prefersLargeTitles = true
+    }
+    let infoNavigationController = UINavigationController(rootViewController: infoViewController).then {
+      $0.navigationBar.prefersLargeTitles = true
+    }
+    let moreNavigationController = UINavigationController(rootViewController: moreViewController).then {
+      $0.navigationBar.prefersLargeTitles = true
+    }
     viewControllers = [
-      UINavigationController(rootViewController: homeViewController).then {
-        $0.navigationBar.prefersLargeTitles = true
-      },
-      UINavigationController(rootViewController: infoViewController).then {
-        $0.navigationBar.prefersLargeTitles = true
-      },
-      UINavigationController(rootViewController: moreViewController).then {
-        $0.navigationBar.prefersLargeTitles = true
-      },
+      homeNavigationController,
+      infoNavigationController,
+      moreNavigationController,
     ]
   }
 }
