@@ -59,6 +59,15 @@
 		1960553D23BC6D5D000643DE /* MainTunesChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960553C23BC6D5D000643DE /* MainTunesChangeViewController.swift */; };
 		1960553F23BC6D67000643DE /* MainTunesChangeViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960553E23BC6D67000643DE /* MainTunesChangeViewReactor.swift */; };
 		1960554123BC6D6D000643DE /* MainTunesChangeViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960554023BC6D6D000643DE /* MainTunesChangeViewUI.swift */; };
+		1960556423BE0116000643DE /* InfoSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960556323BE0116000643DE /* InfoSectionModel.swift */; };
+		1960556623BE02EF000643DE /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960556523BE02EF000643DE /* InfoCell.swift */; };
+		1960556823BE0395000643DE /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960556723BE0395000643DE /* MusicViewController.swift */; };
+		1960556A23BE039C000643DE /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960556923BE039C000643DE /* CollectionViewController.swift */; };
+		1960556C23BE03A3000643DE /* MusicViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960556B23BE03A3000643DE /* MusicViewUI.swift */; };
+		1960556E23BE03AE000643DE /* MusicViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960556D23BE03AE000643DE /* MusicViewReactor.swift */; };
+		1960557023BE03B4000643DE /* CollectionViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960556F23BE03B4000643DE /* CollectionViewUI.swift */; };
+		1960557223BE03BB000643DE /* CollectionViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960557123BE03BB000643DE /* CollectionViewReactor.swift */; };
+		1960557423BE05E0000643DE /* FBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1960557323BE05E0000643DE /* FBService.swift */; };
 		196B65C823B5F87800CE7B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B65C723B5F87800CE7B9D /* AppDelegate.swift */; };
 		196B65D123B5F87A00CE7B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 196B65D023B5F87A00CE7B9D /* Assets.xcassets */; };
 		196B65D423B5F87A00CE7B9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 196B65D223B5F87A00CE7B9D /* LaunchScreen.storyboard */; };
@@ -129,6 +138,15 @@
 		1960553C23BC6D5D000643DE /* MainTunesChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTunesChangeViewController.swift; sourceTree = "<group>"; };
 		1960553E23BC6D67000643DE /* MainTunesChangeViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTunesChangeViewReactor.swift; sourceTree = "<group>"; };
 		1960554023BC6D6D000643DE /* MainTunesChangeViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTunesChangeViewUI.swift; sourceTree = "<group>"; };
+		1960556323BE0116000643DE /* InfoSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSectionModel.swift; sourceTree = "<group>"; };
+		1960556523BE02EF000643DE /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		1960556723BE0395000643DE /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		1960556923BE039C000643DE /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		1960556B23BE03A3000643DE /* MusicViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewUI.swift; sourceTree = "<group>"; };
+		1960556D23BE03AE000643DE /* MusicViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewReactor.swift; sourceTree = "<group>"; };
+		1960556F23BE03B4000643DE /* CollectionViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewUI.swift; sourceTree = "<group>"; };
+		1960557123BE03BB000643DE /* CollectionViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewReactor.swift; sourceTree = "<group>"; };
+		1960557323BE05E0000643DE /* FBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBService.swift; sourceTree = "<group>"; };
 		196B65C423B5F87800CE7B9D /* RespectUV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RespectUV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		196B65C723B5F87800CE7B9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		196B65D023B5F87A00CE7B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -203,6 +221,7 @@
 			children = (
 				196054F923B73828000643DE /* KakaoLoginService.swift */,
 				1960553823BC62D0000643DE /* RxMailCompose.swift */,
+				1960557323BE05E0000643DE /* FBService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -248,6 +267,12 @@
 				1917E4B523B62AA20041FE11 /* InfoViewController.swift */,
 				1917E4E623B644660041FE11 /* InfoViewReactor.swift */,
 				1917E4B723B62AA80041FE11 /* InfoViewUI.swift */,
+				1960556723BE0395000643DE /* MusicViewController.swift */,
+				1960556D23BE03AE000643DE /* MusicViewReactor.swift */,
+				1960556B23BE03A3000643DE /* MusicViewUI.swift */,
+				1960556923BE039C000643DE /* CollectionViewController.swift */,
+				1960557123BE03BB000643DE /* CollectionViewReactor.swift */,
+				1960556F23BE03B4000643DE /* CollectionViewUI.swift */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -275,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				1960551C23BB7D5B000643DE /* MoreSectionModel.swift */,
+				1960556323BE0116000643DE /* InfoSectionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -357,6 +383,7 @@
 				196B65F223B6204000CE7B9D /* RootView.swift */,
 				1960551E23BB816F000643DE /* ConfirmButton.swift */,
 				1960552023BB877B000643DE /* MoreCell.swift */,
+				1960556523BE02EF000643DE /* InfoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -550,6 +577,7 @@
 				1960552523BB8A4A000643DE /* Song.swift in Sources */,
 				1960551323B9E822000643DE /* NicknameChangeViewUI.swift in Sources */,
 				1917E4BC23B62AB30041FE11 /* MoreViewController.swift in Sources */,
+				1960556C23BE03A3000643DE /* MusicViewUI.swift in Sources */,
 				1960553D23BC6D5D000643DE /* MainTunesChangeViewController.swift in Sources */,
 				196054FC23B7392A000643DE /* Log.swift in Sources */,
 				1960552F23BB8C57000643DE /* Tunes.swift in Sources */,
@@ -563,6 +591,7 @@
 				1960554123BC6D6D000643DE /* MainTunesChangeViewUI.swift in Sources */,
 				196054FE23B7403D000643DE /* LoginNavigationController.swift in Sources */,
 				1917E4BE23B62AB70041FE11 /* MoreViewUI.swift in Sources */,
+				1960556423BE0116000643DE /* InfoSectionModel.swift in Sources */,
 				196054FA23B73828000643DE /* KakaoLoginService.swift in Sources */,
 				1917E4D723B62FA20041FE11 /* Reactive+UICollectionView.swift in Sources */,
 				1917E4D923B63F1B0041FE11 /* BaseViewController.swift in Sources */,
@@ -573,17 +602,22 @@
 				196B65F323B6204000CE7B9D /* RootView.swift in Sources */,
 				1917E4E123B642080041FE11 /* NicknameSettingViewReactor.swift in Sources */,
 				196B65F523B621F800CE7B9D /* Colors.swift in Sources */,
+				1960557423BE05E0000643DE /* FBService.swift in Sources */,
 				1960550F23B9E810000643DE /* NicknameChangeViewController.swift in Sources */,
 				1917E4E523B643F10041FE11 /* HomeViewReactor.swift in Sources */,
+				1960557223BE03BB000643DE /* CollectionViewReactor.swift in Sources */,
 				1917E4B623B62AA20041FE11 /* InfoViewController.swift in Sources */,
+				1960556E23BE03AE000643DE /* MusicViewReactor.swift in Sources */,
 				196B65E423B61F1000CE7B9D /* LoginViewController.swift in Sources */,
 				1960551723BB76F0000643DE /* Reactive+UITextField.swift in Sources */,
 				196B65E823B61F6300CE7B9D /* BPMStandardDefaultsSettingViewController.swift in Sources */,
 				1917E4D323B62FA20041FE11 /* UICollectionView+.swift in Sources */,
 				1917E4B023B629F10041FE11 /* HomeViewController.swift in Sources */,
 				196B65EA23B61F8400CE7B9D /* LoginViewUI.swift in Sources */,
+				1960556A23BE039C000643DE /* CollectionViewController.swift in Sources */,
 				1917E4AB23B626E00041FE11 /* BPMStandardDefaultSettingViewUI.swift in Sources */,
 				1917E4C523B62F770041FE11 /* UIView+.swift in Sources */,
+				1960556623BE02EF000643DE /* InfoCell.swift in Sources */,
 				1960553123BB8D0E000643DE /* Difficulty.swift in Sources */,
 				1917E4D123B62FA20041FE11 /* Result+.swift in Sources */,
 				1917E4EB23B724760041FE11 /* Reactive+UIViewController.swift in Sources */,
@@ -594,12 +628,14 @@
 				1917E4A923B626210041FE11 /* Configuration.swift in Sources */,
 				1960553723BBA8A7000643DE /* Speed.swift in Sources */,
 				1917E4E723B644660041FE11 /* InfoViewReactor.swift in Sources */,
+				1960556823BE0395000643DE /* MusicViewController.swift in Sources */,
 				1917E4AE23B629360041FE11 /* MainTabBarController.swift in Sources */,
 				1960551523B9E829000643DE /* NicknameChangeViewReactor.swift in Sources */,
 				1917E4B823B62AA80041FE11 /* InfoViewUI.swift in Sources */,
 				1960553923BC62D0000643DE /* RxMailCompose.swift in Sources */,
 				196B65C823B5F87800CE7B9D /* AppDelegate.swift in Sources */,
 				1960551F23BB816F000643DE /* ConfirmButton.swift in Sources */,
+				1960557023BE03B4000643DE /* CollectionViewUI.swift in Sources */,
 				1917E4B223B629F50041FE11 /* HomeViewUI.swift in Sources */,
 				1960552123BB877B000643DE /* MoreCell.swift in Sources */,
 				1917E4C923B62F940041FE11 /* NSObject+.swift in Sources */,

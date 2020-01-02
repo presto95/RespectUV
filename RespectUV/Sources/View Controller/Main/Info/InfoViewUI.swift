@@ -11,6 +11,8 @@ import UIKit
 final class InfoViewUI: UI {
   unowned var owner: InfoViewController
 
+  var tableView: UITableView!
+
   init(owner: InfoViewController) {
     self.owner = owner
     owner.view = RootView()
@@ -18,7 +20,17 @@ final class InfoViewUI: UI {
     setupConstraints()
   }
 
-  func setupSubviews() {}
+  func setupSubviews() {
+    tableView = UITableView(frame: .zero, style: .grouped).then {
+      $0.register(InfoCell.self)
+    }
 
-  func setupConstraints() {}
+    view.addSubviews(tableView)
+  }
+
+  func setupConstraints() {
+    tableView.makeConstraints {
+      $0.edges.equalToSuperview()
+    }
+  }
 }
